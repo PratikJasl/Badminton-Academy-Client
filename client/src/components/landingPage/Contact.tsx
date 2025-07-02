@@ -3,7 +3,7 @@ import { MapPinIcon } from "@heroicons/react/24/outline";
 
 function Contact(){ 
     return(
-        <section id="contacts" className="2xl:mt-20 md:px-25 p-10 px-30 w-full text-center bg-green-950">
+        <section id="Contact" className="2xl:mt-20 md:px-25 p-10 px-30 w-full text-center bg-green-950">
             <div className="flex flex-col gap-8 items-center">
                 <div className="flex flex-col gap-5 items-center justify-center">
                     <h1 className="2xl:text-8xl md:text-6xl text-5xl font-bold">Contact <span className="text-green-500">Us</span></h1>

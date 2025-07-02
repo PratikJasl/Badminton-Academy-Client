@@ -3,7 +3,7 @@ import { PhoneIcon } from "@heroicons/react/24/outline";
 
 function About(){
     return(
-        <section id="about" className="flex 2xl:max-w-900 md:max-w-300 max-w-82 md:p-5 2xl:mt-40 mt-30">
+        <section id="About" className="flex 2xl:max-w-900 md:max-w-300 max-w-82 md:p-5 2xl:mt-40 mt-40">
             <div className="flex lg:flex-row flex-col items-center justify-center 2xl:gap-100 md:gap-10 gap-5">
                 <div className="flex flex-col order-2 md:order-none gap-5">
                     <div className="flex flex-col md:gap-8 gap-5 sm:items-center md:items-start md:text-left text-center">

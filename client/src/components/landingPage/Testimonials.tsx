@@ -93,7 +93,7 @@ function Testimonials() {
     };
 
     return (
-        <section id="testimonials" className="w-full 2xl:mt-30 mt-20 mb-20 flex flex-col items-center gap-15 p-10 relative">
+        <section id="Testimonials" className="w-full 2xl:mt-30 mt-20 mb-20 flex flex-col items-center gap-15 p-10 relative">
 
             <div className="flex flex-col items-center gap-5">
                 <h1 className="2xl:text-9xl md:text-8xl text-5xl font-bold"><span className="bg-gradient-to-t from-white to-green-500 text-transparent bg-clip-text">Testimonials</span> </h1>

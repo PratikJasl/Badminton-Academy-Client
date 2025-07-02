@@ -7,7 +7,7 @@ import whyUs6 from "../../assets/whyus6.png";
 
 function WhyUS(){
     return(
-        <section id="why-us" className="w-full 2xl:mt-400 md:mt-235 mt-380 p-25">
+        <section id="WhyUs" className="w-full 2xl:mt-400 md:mt-235 mt-380 p-25">
             <div className="flex flex-col items-center justify-center 2xl:gap-15 gap-5">
                 <div className="flex flex-col items-center justify-center 2xl:gap-15 md:gap-8 md:w-full w-86 gap-5">
                     <h1 className="2xl:text-9xl md:text-8xl text-6xl font-bold">Why <span className="text-green-400">Us</span> ?</h1>
