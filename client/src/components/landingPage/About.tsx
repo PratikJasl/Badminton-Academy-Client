@@ -1,12 +1,21 @@
 import profileImage from "../../assets/Profileimage2.png";
 import { PhoneIcon } from "@heroicons/react/24/outline";
+import { useIsVisible } from "../../services/useIsVisible";
+import { useRef } from "react";
 
 function About(){
+    const Ref1 = useRef<HTMLElement | null>(null);
+    const isVisible = useIsVisible(Ref1);
     return(
-        <section id="About" className="flex 2xl:max-w-900 md:max-w-300 max-w-82 md:p-5 2xl:mt-40 mt-40">
-            <div className="flex lg:flex-row flex-col items-center justify-center 2xl:gap-100 md:gap-10 gap-5">
+        <section 
+            id="About" 
+            ref={Ref1}
+            className={`flex 2xl:max-w-900 md:max-w-300 max-w-82 md:p-5 2xl:mt-40 mt-40 
+            transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}
+        >
+            <div className="flex lg:flex-row flex-col items-center justify-center 2xl:gap-100 md:gap-20 gap-5">
                 <div className="flex flex-col order-2 md:order-none gap-5">
-                    <div className="flex flex-col md:gap-8 gap-5 sm:items-center md:items-start md:text-left text-center">
+                    <div className={`flex flex-col md:gap-8 gap-5 sm:items-center md:items-start md:text-left text-center ${isVisible ? "animate-fadeInLeft" : ""}`}>
                         <div className="flex flex-col md:items-start items-center md:gap-5 gap-1">
                             <p className="2xl:text-6xl md:text-4xl text-2xl">Meet</p>
                             <div className="flex flex-col 2xl:gap-2 md:gap-1">
@@ -17,7 +26,7 @@ function About(){
                         
                         <p className="2xl:text-2xl md:text-xl text-xl">National Level Player and International Certified Badminton Coach</p>
 
-                        <div className="md:mt-5 flex md:flex-row flex-col 2xl:gap-8 gap-5 w-full items-center animate-fadeInLeft">
+                        <div className="md:mt-5 flex md:flex-row flex-col 2xl:gap-8 gap-5 w-full items-center">
                             <div>
                                  <button 
                                     className="w-fit font-semibold bg-green-600 text-white 2xl:text-2xl md:text-xl text-md p-2 px-4 lg:px-5  rounded-3xl hover:scale-120 active:scale-120 transition transform duration-500 ease-in-out">
@@ -48,7 +57,7 @@ function About(){
                     </div>
                 </div>
 
-                <div className="2xl:h-140 2xl:w-160 md:h-120 md:w-150 order-1 md:order-none">
+                <div className={`2xl:h-140 2xl:w-160 md:h-120 md:w-150 order-1 md:order-none ${isVisible ? "animate-fadeInRight" : ""}`}>
                     <img 
                         src={profileImage}
                         alt="profile-pic" 

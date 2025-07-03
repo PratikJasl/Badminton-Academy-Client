@@ -25,25 +25,25 @@ function Carousel() {
       }, 500); 
     }, 50000);
     return () => clearInterval(interval);
-  }, [imageLinks]);
+    }, [imageLinks]);
 
-  //Introduce a delay of 500ms before changing the image
-  const nextImage = () => {
-    setIsFading(true); 
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageLinks.length);
-      setIsFading(false); 
-    }, 500);
-  };
+    //Introduce a delay of 500ms before changing the image
+    const nextImage = () => {
+      setIsFading(true); 
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % imageLinks.length);
+        setIsFading(false); 
+      }, 500);
+    };
 
-  //Introduce a delay of 500ms before changing the image
-  const previousImage = () => {
-    setIsFading(true); 
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + imageLinks.length) % imageLinks.length);
-      setIsFading(false);
-    }, 500);
-  };
+    //Introduce a delay of 500ms before changing the image
+    const previousImage = () => {
+      setIsFading(true); 
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + imageLinks.length) % imageLinks.length);
+        setIsFading(false);
+      }, 500);
+    };
 
   //@dev: Previous and next image indices
   const prevIndex = (currentIndex - 1 + imageLinks.length) % imageLinks.length;
@@ -52,7 +52,7 @@ function Carousel() {
   return (
     <section id="Gallery" className="flex flex-col gap-10 items-center justify-center 2xl:mt-15 mt-5">
       <div className="flex flex-col items-center justify-center 2xl:gap-8 md:gap-5 md:w-full w-86 gap-5">
-        <h1 className="2xl:text-9xl md:text-8xl text-6xl font-bold text-center bg-gradient-to-t from-white to-green-500 text-transparent bg-clip-text">Gallery</h1>
+        <h1 className="2xl:text-9xl md:text-8xl text-6xl font-bold text-center bg-gradient-to-t from-white to-green-500 text-transparent bg-clip-text">Meet our champions !!</h1>
         <h2 className="2xl:text-3xl md:text-2xl text-xl">Meet our champions !!</h2>
       </div>
 

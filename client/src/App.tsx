@@ -4,11 +4,9 @@ import { ToastContainer } from 'react-toastify';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 const Home = lazy(() => import('./components/landingPage/Home'));
-import ObserverProvider from './services/ObserverProvider';
 
 function App() {
     return (
-        <ObserverProvider>
         <div className='h-screen flex flex-col items-center justify-center overflow-auto scroll-smooth [scrollbar-width:none]'>
             <Navbar />
             <Routes>
@@ -28,7 +26,6 @@ function App() {
                 theme="dark"
             />
         </div>
-        </ObserverProvider>
     );
 }
 
