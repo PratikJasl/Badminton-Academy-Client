@@ -61,7 +61,7 @@ function About(){
                     <img 
                         src={profileImage}
                         alt="profile-pic" 
-                        className="md:h-full md:w-full h-60 object-cover hover:scale-110 active:scale-110 transition-transform duration-800 ease-in-out" 
+                        className="md:h-full md:w-full h-60 object-cover" 
                     />
                 </div>
             </div>
