@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profileImage from "../../assets/Profileimage4.png";
+import profileImage from "../../assets/ProfileImage2.png";
 import { useIsVisible } from "../../services/useIsVisible";
 import { useRef } from "react";
 
