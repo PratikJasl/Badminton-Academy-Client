@@ -37,7 +37,7 @@ html {
 @theme {
   --animate-fadeInRight: fadeInRight 2s ease-in-out forwards;
   --animate-fadeInLeft: fadeInLeft 2s ease-in-out forwards;
-  --animate-appear: appear 5s animation-timeline: view();
+  --animate-fadeInUp: fadeInUp 2s ease-in-out forwards;
 
   @keyframes fadeInRight {
     0%{
@@ -61,14 +61,14 @@ html {
     }
   }
 
-  @keyframes appear {
+  @keyframes fadeInUp {
     0%{
       opacity: 0;
-      transform: scale(0.5)
+      transform: translateY(50px)
     }
     100%{
       opacity: 1;
-      transform: scale(1)
+      transform: translateY(0px)
     }
   }
 }

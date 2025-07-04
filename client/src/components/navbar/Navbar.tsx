@@ -21,7 +21,18 @@ function Navbar(){
                 </div>
 
                 <div>
-                    <div className="flex items-center">
+                    <div>
+                        <div className="md:flex flex-row items-center justify-center p-4 gap-5 hidden">
+                            <a href="#Introduce" className="hover:text-green-500  lg:text-xl">Home</a>
+                            <a href="#About" className="hover:text-green-500  lg:text-xl">About</a>
+                            <a href="#WhyUs" className="hover:text-green-500  lg:text-xl">WhyUs</a>
+                            <a href="#Gallery" className="hover:text-green-500  lg:text-xl">Gallery</a>
+                            <a href="#Testimonials" className="hover:text-green-500  lg:text-xl">Testimonials</a>
+                            <a href="#Contact" className="hover:text-green-500  lg:text-xl">Contact</a>
+                        </div>
+                    </div>
+                    
+                    <div className="md:hidden flex items-center">
                         <button onClick={toggleMenu} className="p-2">
                             {menuOpen ? (
                                 <XMarkIcon className="h-6 w-6 text-white" />
@@ -29,11 +40,10 @@ function Navbar(){
                                 <Bars3Icon className="h-6 w-6 text-white" />
                             )}
                         </button>
-                    </div> 
-
+                    </div>
                         
                     <div 
-                        className={`fixed right-0 top-12 z-10 p-10 h-screen md:w-72 w-64 bg-gray-900 text-white
+                        className={`fixed right-0 top-12 z-10 p-5 h-screen md:w-72 w-64 bg-black text-white
                         transform transition-all duration-500 ease-in-out
                         ${menuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"}`}
                     >
