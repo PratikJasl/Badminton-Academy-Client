@@ -37,7 +37,7 @@
 
 6)	It describes the data flow between the different entities of the system.
 
-![Sequence Diagram](./client/src/assets/Badminton%20Academy%20Sequence%20Diagram.png)
+<!-- ![Sequence Diagram](./client/src/assets/Badminton%20Academy%20Sequence%20Diagram.png) -->
 
 
 ## TECHINAL STACK
@@ -70,13 +70,13 @@
     Libraries like “Winston” can be used for Error Logging.
 
 
-## SYSTEM DESIGN
+<!-- ## SYSTEM DESIGN
 
 ![System Design](./client/src/assets/Badminton_Academy_System_Design.png)
 
 ## DATABASE SCHEMA
 
-![DataBase Schema](./client/src/assets/Badminton_Acadmey_DB_DESIGN.png)
+![DataBase Schema](./client/src/assets/Badminton_Acadmey_DB_DESIGN.png) -->
 
 
 ## Suggestions
